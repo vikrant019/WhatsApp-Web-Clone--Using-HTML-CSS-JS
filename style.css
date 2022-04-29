@@ -107,7 +107,7 @@
     .contact {
         background-color: #111B21;
         height: 80vh;
-       height: calc(100vh-70px);
+       height: calc(100vh-80px);
         color: #E9EDEF;
     }
     
