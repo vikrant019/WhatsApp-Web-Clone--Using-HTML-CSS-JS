@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+    <link rel="icon" href="./img/wlogo.png" type="image/icon type">
+    <script src="./script.js" defer></script>
+    <title>WhatsApp</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chatMenu" id="chatMenu">
+            <div class="mainMenu">
+                <div class="dp">
+                    <ul>
+                        <li><img src="./img/dp.png" onclick="ShowDp()"></li>
+                    </ul>
+
+                </div>
+                <div class="status">
+                    <ul>
+                        <!-- <i class="fa-regular fa-circle"></i> -->
+                        <a href="#searchChat"> <i class="fa-solid fa-message-lines"></i></a>
+                        <i class="fa-solid fa-ellipsis-vertical " onclick="settingmenu()"></i>
+                        <!-- <i class="fa-brands fa-twitter"></i> -->
+                    </ul>
+                </div>
+                <div class="settingmenu" id="settingmenu1">
+                    <ul id="menu-box">
+                        <li>New Group</li>
+                        <li>Starred Message</li>
+                        <li>Setting</li>
+                        <li>Logout</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chatSearch">
+                <i class="fa-regular fa-magnifying-glass" id="#searchChat"></i> <input type="text" id="searchChat" name="" placeholder="Search or start new chat" onkeyup="SearchFun()">
+            </div>
+            <div class="contact">
+                <div class="chat1" onclick="a2zfun()">
+                    <div class="dp">
+                        <img src="./img/a2z.png" alt="">
+
+                    </div>
+                    <div class="name">
+                        <span class="contact-name">A2Z-T-B-17</span> <span class="time">01:00 AM</span><br>
+                        <span>A2Z: </span> <span class="description">O/p :-
+                            https://vikrantdhakane19.github.io/...</span>
+                        <span class="msgCount" id="msga2z">10</span>
+
+                    </div>
+
+                </div>
+                <div class="chat1" onclick="mukeshAmbani()">
+                    <div class="dp">
+                        <img src="./img/ambani.jpg" alt="">
+
+                    </div>
+                    <div class="name">
+
+                        <span class="contact-name">Mukesh Ambani</span> <span class="time">11:55 PM</span><br>
+                        <span class="contactName"></span> <span class="description">Bhai Thode Paise Chahiye The...
+                        </span>
+
+
+                        <!-- <span class="msgCount"></span> -->
+
+                    </div>
+                </div>
+                <div class="chat1" onclick="SunderFun()">
+                    <div class="dp">
+                        <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg" alt="">
+
+                    </div>
+                    <div class="name">
+
+                        <span class="contact-name">Sunder Pichai </span> <span class="time">11:00 PM</span><br>
+                        <span class="contactName"></span> <span class="description">Answer my phone! I need your help...
+                        </span>
+
+
+                        <!-- <span class="msgCount"></span> -->
+
+                    </div>
+                </div>
+                <div class="chat1" onclick="bcsFun()">
+                    <div class="dp">
+                        <img src="./img/clg.png" alt="">
+
+                    </div>
+                    <div class="name">
+                        <span class="contact-name">TYBSc(C.S)Div-A 21-22</span> <span class="time">12:03 PM</span><br>
+                        <span class="contactName">9422224440: </span> <span class="description">Virtual Campus by
+                            Leading IT M...</span>
+                        <span class="msgCount" id="bcsmsg">03</span>
+
+                    </div>
+
+                </div>
+                <div class="chat1" onclick="elonFun()">
+                    <div class="dp">
+                        <img src="https://media.wired.com/photos/5bae7a3f6278de2d2123479b/master/pass/ElonMusk_18261092524731.jpg" alt="" height="43px">
+
+                    </div>
+                    <div class="name">
+
+                        <span class="contact-name">Elon Musk </span> <span class="time">09:00 PM</span><br>
+                        <span class="contactName"></span> <span class="description">Bhai, Mars kab chale... </span>
+
+
+                        <!-- <span class="msgCount"></span> -->
+
+                    </div>
+
+
+                </div>
+                <div class="chat1" onclick="ilnFun()">
+                    <div class="dp">
+                        <img src="./img/iln.png" alt="">
+
+                    </div>
+                    <div class="name">
+                        <span class="contact-name">I ❤️ NGR</span> <span class="time">12:00 AM</span><br>
+                        <span class="contactName"></span> <span class="description">🤔 *अण्णांच्या राळेगणसिद्धीत "या"
+                            संस्थेच्या उपोषणाला वि...</span>
+                        <span class="msgCount" id="ilnmsg">140</span>
+
+                    </div>
+
+                </div>
+                <div class="chat1" onclick="amavle()">
+                    <div class="dp">
+                        <img src="./img/maharaj1.png" alt="">
+
+                    </div>
+                    <div class="name">
+
+                        <span class="contact-name">⛳आम्ही मावळे शिवरायांचे⛳🏇</span> <span class="time">06:55 AM</span><br>
+                        <span class="contactName"></span> <span class="description">+91 84828 32197 left </span>
+
+
+                        <span class="msgCount" id="amavlemsg">320</span>
+
+                    </div>
+
+                </div>
+
+                <div class="chat1" onclick="akshayw()">
+                    <div class="dp">
+                        <img src="./img/single.jpg" alt="">
+
+                    </div>
+                    <div class="name">
+
+                        <span class="contact-name">Akshay Waykar</span> <span class="time">4/5/22</span><br>
+                        <span class="contactName"></span> <span class="description"></span>
+
+
+                        <!-- <span class="msgCount"></span> -->
+
+                    </div>
+
+
+                </div>
+                <div class="chat1" onclick="cthathe()">
+                    <div class="dp">
+                        <img src="./img/single.jpg" alt="">
+
+                    </div>
+                    <div class="name">
+
+                        <span class="contact-name">Chaitanya Tathe</span> <span class="time">4/5/22</span><br>
+                        <span class="contactName"></span> <span class="description"></span>
+
+
+                        <!-- <span class="msgCount"></span> -->
+
+                    </div>
+
+
+                </div>
+                <div class="chat1" onclick="karale()">
+                    <div class="dp">
+                        <img src="./img/single.jpg" alt="">
+
+                    </div>
+                    <div class="name">
+
+                        <span class="contact-name">Avdhut Karale</span> <span class="time">4/4/22</span><br>
+                        <span class="contactName"></span> <span class="description"></span>
+
+
+                        <!-- <span class="msgCount"></span> -->
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="my-profile" id="my-profile">
+                <div class="heading">
+                    <i class="fa-solid fa-arrow-left" onclick="closeDp()"></i>
+                    <p>Profile</p>
+                </div>
+                <div class="myprofile-detail">
+                    <div class="img">
+                        <img src="./img/dp.png" alt="">
+                    </div>
+                    <div class="my-name">
+                        <p>Your Name</p>
+
+                        <p>Anonymous</p>
+                        <p>This is not your username or pin. This name will be visible to your WhatsApp contacts.</p>
+                        <p>About</p>
+                        <p>#programmer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatSection" id="chatSection">
+
+
+            <div class="chat hidden" id="a2z">
+                <div class="ChatbackBtn">
+                    <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                </div>
+                <div class="groupNameBar" onclick="a2zcontact()">
+                    <div class="nbar">
+                        conte
+                    </div>
+                    <div class="dp">
+                        <img src="./img/a2z.png" alt="">
+
+                    </div>
+                    <div class="grpname">
+                        <span class="gname">A2Z-T-B-17</span> <br>
+                        <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut..
+                            </span>
+                    </div>
+
+
+                </div>
+                <div class="chatBox">
+                    <div class="chating" id="chating">
+                        <div class="emoji">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <i class="fa-regular fa-paperclip"></i>
+                        </div>
+                        <div class="chatinput">
+                            <input type="text" name="" id="" placeholder="Type a message">
+                        </div>
+                        <div class="mic">
+                            <i class="fa-solid fa-microphone"></i>
+
+                        </div>
+                    </div>
+                    <div class="allchat">
+                        <div class="me">
+                            <div class="message sent">
+                                <div class="reply">
+                                    <p class="p1">You</p>
+                                    <p class="p2">
+                                        <i class="fa-solid fa-video"></i> CSS_Demo_6 (Gmail Clone )
+                                    </p>
+                                </div>
+                                <div class="link">
+
+                                    <p class="p2">
+                                        CSS_Demo_6 (Gmail Clone )
+                                    </p>
+                                    <p class="gitlink">vikrantdhakane19.github.io</p>
+                                </div>
+
+                                <div class="msgDetail">
+                                    <p>O/p :- <a href="https://vikrantdhakane19.github.io/Gmail-UI-Clone/">https://vikrantdhakane19.github.io/Gmail-UI-Clone/</a> ( plz open in pc )</p>
+                                    <p> Source code :- <a href="https://github.com/vikrantdhakane19/Gmail-UI-Clone/tree/main">https://github.com/vikrantdhakane19/Gmail-UI-Clone/tree/main</a>
+                                    </p>
+                                    <span class="metadata">
+                                        <span class="time">01:00 AM</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="message received">
+                            <p class="MoNo">+91 76662 04405</p>
+                            Nawale Pratiksha Rajendra
+                            <span class="metadata"><span class="time">08:06 AM</span></span>
+                        </div>
+                        <div class="message received">
+                            <p class="MoNo purple" style="color: rgb(247, 54, 247);">A2Z Infotech</p>
+                            Team no 21 <br> Samiksha pawar TL <br> Akansha gore <br> Madan ghodechor Nawale<br> Pratiksha Rajendra Ahire <br> Vaishnavi babasaheb
+                            <span class="metadata"><span class="time">08:07 AM</span></span>
+                        </div>
+                        <div class="message received" style="width: 400px;">
+                            <p class="MoNo purple" style="color: rgb(54, 176, 247);">+91 76204 19653</p>
+                            <img src="./img/sample2.jpeg" alt="" width="100%" class="a2zimg" id="sample2" onclick="imgFun()">
+                            <span class="metadata"><span class="time">08:33 AM</span></span>
+                        </div>
+                        <div class="message received" style="width: 400px;">
+                            <p class="MoNo purple" style="color: rgb(247, 54, 112);">+91 76204 19653</p>
+                            <img src="./img/sample1.jpeg" alt="" width="100%" class="a2zimg" id="sample1" onclick="imgFun2()">
+                            <span class="metadata"><span class="time">09:29 AM</span></span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="mukesha" id="mukeshAmbani">
+
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="mukeshContact()">
+                        <div class="dp">
+                            <img src="./img/ambani.jpg" alt="">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">Mukesh Ambani</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating" id="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="me">
+                                <div class="message sent" style="padding: 10px 20px;">
+                                    hii sir...
+                                    <span class="metadata" style="font-size:10px"><span class="time">08:06
+                                            AM</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="message received">
+                            <!-- <p class="MoNo">+91 76662 04405</p> -->
+                            Hii
+                            <span class="metadata"><span class="time">08:10 AM</span></span>
+                        </div>
+                        <div class="me">
+                            <div class="message sent" style="padding: 10px 20px;margin-top: 30px;">
+                                Bhai Thode Paise Chahiye The....
+                                <span class="metadata" style="font-size:10px"><span class="time">08:30 AM</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="sunder" id="sunderp">
+                <div class="ChatbackBtn">
+                    <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                </div>
+                <div class="chat ">
+
+                    <div class="groupNameBar" onclick="sunderContact()">
+                        <div class="dp">
+                            <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg" alt="">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">Sunder Pichai</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="me">
+                                <div class="message sent" style="padding: 10px 20px;">
+                                    Answer my phone! I need your help...
+                                    <span class="metadata" style="font-size:10px"><span class="time">11:00
+                                            AM</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="bcs">
+
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="tyContact()">
+                        <div class="dp">
+                            <img src="./img/clg.png" alt="">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">TYBSc(C.S)Div-A 21-22</span> <br>
+                            <span class="cname">Abhishek, Abhishek, Adsul, Akash, Akolkar, Akshay, Aniket, Anil, Arti,
+                                Ashish, Avdhut, Bhalsing, Bharti, Bhavsar, Bhingare..</span>
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="message received">
+                                <p class="MoNo">Danve Ma'am</p>
+                                Anemoi Technologies <br> Opening .......... 👆<br> We have Opening for <br><br> 1-Core Java <br> 2-React JS <br> 3- DevOps<br> 4- SR Java Developer<br> 5- Under Water Robotics
+                                <br><br> Experience and Internship <br><br>position in Anemoi Technologies. Location :Pune
+                                <br><br> Preference for immediate joiner.<br> Please send your resume to:
+                                <a href="mailto:siddesh.kadus@anemoitechnologies.com" style="color: rgb(76,180,229);">siddesh.kadus@anemoitechnologies.com</a>
+                                <span class="metadata"><span class="time">08:06 AM</span></span>
+                            </div>
+                            <div class="message received">
+                                <p class="MoNo">Gangarde Sir HOD</p>
+                                Kindly Note that<b> tomorrows Campus Interview</b> are <b>Postponed</b> .Rescheduling
+                                <br> date informed soon...
+                                <span class="metadata"><span class="time">09:07 AM</span></span>
+                            </div>
+                            <div class="message received">
+                                <p class="MoNo">Gangarde Sir HOD</p>
+                                Virtual Campus by Leading IT MNC- Hexaware for BSc / BCA 2022 batch freshers <br><br> Dear All, <br><br> Greetings from Profound Edutech! <br><br> We are pleased to inform you that Hexaware is conducting Virtual Campus
+                                Drive for 2022 Batch BSc/BCA Freshers and following are the details of the same.
+                                <br><br> Eligible students are advised to apply for the opportunity if interested.
+                                <br><br> About Company: Hexaware Technologies <a href="www.hexaware.com" style="color: rgb(76,180,229);">(www.hexaware.com)</a> It is a global provider of IT & IT-enabled services with progressively increasing relevance
+                                owing to its disruptive competitiveness.The company is dedicated to delivering complex technology solutions and automation-led services through its deep domain expertise and technology specialists.
+                                <span id="readMore" style="display: none;"> <br><br> Eligibility Criteria: <br> - BSc &
+                                    BCA
+                                    <br> - Streams: Computer Science,
+                                    id=" readmore "> Information Technology, Mathematics, Statistics, Electronics and
+                                    Physics. <br> - Percentage: 60% or 6 CGPA throughout 10th, 12th and Graduation. <br>
+                                    - YOP: 2022 batch <br> - No Active Backlogs <br> - Maximum of 1 years
+                                    of education gap, if any, is allowed between 10th and graduation. No gaps are
+                                    allowed within Graduation duration. Graduation should be completed within 3 years.
+                                    <br><br> Stipend Details: Period: (INR Per Month) <br> 1st Year STIPEND: 18,500 +
+                                    601 (ESIC) <br> 2nd Year STIPEND: 20750 +674 (ESIC) <br> 3rd Year – CTC will be
+                                    matched as per industry standards <br> <br> Service Agreement: 5 Years <br><br>
+                                    Selection Process: <br><br> Interview Process <br><br> Duration Round 1: <br> Online
+                                    Aptitude Test <br> 80 Mins <br><br> Round 2: <br> Communication Test <br> 45 Mins
+                                    <br><br> Round 3: <br> Technical Interview 1 <br> 30 Mins <br><br> Round 4:
+                                    <br> HR Discussion <br> 30 Mins <br><br> Training Location: Currently Virtual,
+                                    Candidate is expected to report to the business location as required by the
+                                    management. (Post training posting locations will depend on
+                                    the business requirements) Online Test Date: 3rd week of April 2022 (Further details
+                                    will be informed later to the shortlisted students by Hexaware) <br><br> Link to
+                                    Register for Hexaware Campus: Visit: <a href="https://bit.ly/HEXAWAREBSC22 "
+                                        style="color: rgb(76,180,229); ">https://bit.ly/HEXAWAREBSC22</a><br><br> Select
+                                    College Name as: New Arts Commerce and Science College, Ahmednagar <br> (Copy paste
+                                    as it is from here) <br><br> Deadline to Apply: Before
+                                    11th Apr 2022, 11.59 pm Imp Note: Profound Edutech does not charge any fees for
+                                    Placement Drives and has neither authorized / appointed any person / party to
+                                    collect any money. <br><br> Thanks and regards, <br><br> Placement Team, <br>
+                                    Profound Edutech, Pune
+                                </span>
+                                <p id="reamM" onclick="Readmore()"><a href="#" style="color: rgb(76,180,229);text-decoration: none;">Read more...</a></p>
+                                <span class="metadata "><span class="time ">09:07 AM</span></span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="elon" id="elon">
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="elonContact()">
+                        <div class="dp">
+                            <img src="https://media.wired.com/photos/5bae7a3f6278de2d2123479b/master/pass/ElonMusk_18261092524731.jpg" style="widht:45px; height:45px;">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">Elon Musk</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="me">
+                                <div class="message sent" style="padding: 10px 20px;">
+                                    Bhai, Mars kab chale...
+                                    <span class="metadata" style="font-size:10px"><span class="time">09:00
+                                            PM</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="iln">
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="ilnContanct()">
+                        <div class="dp">
+                            <img src="./img/iln.png" height="45px" width="45px">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">I ❤️ NGR</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="message received">
+                                <p class="MoNo"></p>
+                                🎯 <b>नामांकित बँकेच्या टेली कॉलिंगसाठी जागा भरणे आहे!</b><br><br> 👤 जागा- १० (मुली)
+                                <br><br> 🎓<b> पात्रता </b>- १० वी, १२ वी व ग्रॅज्युएट पास, तसेच उत्तम संभाषण कौशल्य मराठी, हिंदी आवश्यक तसेच इंग्लिशसाठी प्राधन्य देण्यात येईल. <br><br>⏳ <b>मुलाखतीची
+                                    तारीख:</b> ७ ते १६ एप्रिल २०२२. <br><br>⏰ <b>वेळ:</b> सकाळी १० ते दुपारी ५ वाजेपर्यंत.
+                                <br><br> 📌<b> टीप</b> - इच्छुक उमेदवारांनी प्रत्यक्ष मुलाखतीसाठी यावे. केवळ फोनवर चौकशी करू नये. <br><br>📍<b> पत्ता</b> : फाईव्हस्टार लोन्स शाँप नंबर - बी ३२, अंबर प्लाझा, स्टेशन रोड, जुन्या बस स्टँड समोर, अहमदनगर - ४१४००१.
+                                <br><br><b>☎️ संपर्क</b> : 7219814444 <br><br>(ADVT)
+                                <span class="metadata"><span class="time">09:07 AM</span></span>
+                            </div>
+                            <div class="message received">
+                                <p class="MoNo"></p>
+                                🤔<b> अण्णांच्या राळेगणसिद्धीत "या" संस्थेच्या उपोषणाला विरोध <br><br> I ❤️ नगर II
+                                    उपोषण</b><br><br> 🚛 पारनेर तालुक्यात झालेला टॅंकर घोटाळा ज्येष्ठ समाजसेवक अण्णा हजारे यांचे आजी- माजी सहकारी दडपत असल्याचा आरोप करत लोकजागृती सामाजिक संस्थेने पुकारलेल्या उपोषणाला राळेगण-सिद्धी परिवाराने विरोध केला
+                                आहे. येत्या ११ तारखेपासून राळेगणसिद्धी येथे उपोषण चालू करणार असल्याचे पत्र ग्रामपंचायत राळेगण सिध्दी, अण्णा हजारे व भ्रष्टाचार विरोधी जनआंदोलन न्यास यांना देण्यात आले आहे.
+                                <br><br> 📹 <b>प्रसिद्धीसाठी गावात उपोषण</b><br> दरम्यान, सरपंच लाभेश औटी यांनी राळेगण येथे उपोषण करता येणार नाही, असे लोकजागृती सामाजिक संस्थेला पत्राने कळवले आहे.
+                                <span id="readMore1" style="display: none;"> या सामाजिक संस्थेने राळेगणसिद्धीला उपोषण न
+                                    करणे व त्यांनी आम्हाला आमच्या गावातील एखाद्या विशिष्ट विषयावर ग्रामसभा बोलायला
+                                    सांगणे म्हणजे आमच्या राळेगणसिद्धी परिवाराच्या अधिकारांवर अतिक्रमण आहे. जर घोटाळा
+                                    झालाच असेल तर मग शासन दरबारी उपोषण करा. अण्णा हजारेंच्या गावात उपोषण केल्यावर चांगली
+                                    प्रसिद्धी मिळेल, या हेतूने गावात उपोषण करत असल्याचा आरोप राळेगणचे सरपंच औटी यांनी
+                                    केला आहे.
+                                    <br><br>
+                                    🤥<b>उपाेषणावर ठाम</b> <br>
+                                    लोकजागृती सामाजिक संस्था या प्रकरणात अण्णांची व राळेगणची नाहक बदनामी करत असल्याचा
+                                    आरोप केला आहे. दरम्यान सरपंच औटी यांच्या पत्रातील मुद्यांना प्रतिआव्हान देत
+                                    उपाेषणावर ठाम असल्याचे लाेकजागृती संस्थेचे अध्यक्ष रामदास घावटे यांनी सांगितले.
+                                    पाेलिसांनी या घाेटाळ्यात तक्रारदार व साक्षीदारांचे जबाब घेतले आहेत. टॅंकर
+                                    घोटाळ्यातील आरोपींच्या अटकपूर्व जामीन अर्जावर ८ एप्रिलला न्यायालयात सुनावणी हाेणार
+                                    आहे.
+                                    <br><br>
+                                    🪀<b> असेच अपडेट मिळविण्यासाठी I❤️नगरच्या 7798300400 या क्रमांकावर मिस्ड कॉल
+                                        द्या.</b>
+                                </span>
+                                <p id="reamM1" onclick="Readmore1()"><a href="#" style="color: rgb(76,180,229);text-decoration: none;">Read more...</a></p>
+                                <span class="metadata "><span class="time ">09:07 AM</span></span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="amavle">
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="mavleContact()">
+                        <div class="dp">
+                            <img src="./img/maharaj1.png" height="45px" width="45px">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">⛳आम्ही मावळे शिवरायांचे⛳🏇</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="message received">
+                                <p class="MoNo"></p>
+                                #शिवसाम्राज्याचे_दिनविशेष <br><br>• २५ फेब्रुवारी इ.स. १६३७ स्वराज्य संकल्पक शहाजीराजे आदिलशाहीत दाखल झाले तेव्हा फर्जंद हा किताब मिळाला..! ॥ गड-किल्ले संवर्धन प्रतिष्ठान, महाराष्ट्र राज्य ॥ <a href="https://www.instagram.com/p/CaYXBbjPErT/?utm_medium=share_sheet"
+                                    style="color: rgb(76,180,229);text-decoration: none;">
+                                    https://www.instagram.com/p/CaYXBbjPErT/?utm_medium=share_sheet</a>
+                                <span class=" metadata "><span class="time ">09:07 AM</span></span>
+                            </div>
+                            <div class="message received ">
+                                <p class="MoNo "></p>
+                                हिन्दुहृदयसम्राट स्वातंत्रवीर विनायक दामोदर <br> सावरकर आत्मार्पणदिन🚩 <br><br> जीवनात विज्ञान आणि अध्यात्मशास्त्र यांचा सुरेख <br> संगम झालेल्या सावरकरांनी २६ फेब्रुवारी १९६६ या दिवशी <br> आपली जीवनयात्रा संपवली ! <br><br>                                "आता कैचे देणे घेणे, आता संपले बोलणे",
+                                <br> हेच तात्यांचे शेवटचे शब्द. <br><br> स्वातंत्रवीर विनायक दामोदर सावरकरांच्या <br> आत्मार्पण दिनानिमित्य विनम्र अभिवादन! <br><br> || जयतु जयतु हिंदुराष्ट्रम् ||🙏🚩
+                                <!-- <p id="reamM1 " onclick="Readmore1() "><a href="# " style="color: rgb(76,180,229);text-decoration: none; ">Read more...</a></p> -->
+                                <span class="metadata "><span class="time ">09:07 AM</span></span>
+                            </div>
+                            <div class="message received">
+                                <p class="MoNo"></p>
+                                #शिवसाम्राज्याचे_दिनविशेष <br><br> • ५ मार्च इ.स.१६५९ <br> कुडाळ येथील देसाई लखम सावंताची रुस्तुमजमाने सर्वत्र नाकेबंदी केली. अश्या परिस्थितीत छत्रपती शिवाजी महाराजांनी लखम सावंतांना योग्य ती मदत करून त्यांचे संरक्षण केले.
+                                <br><br> ॥ गड-किल्ले संवर्धन प्रतिष्ठान, महाराष्ट्र राज्य ॥ <br><br>
+                                <a href="https://www.instagram.com/p/Cas-Q-wPwQQ/?utm_medium=share_sheet" style="color: rgb(76,180,229);text-decoration: none;">
+                                    https://www.instagram.com/p/Cas-Q-wPwQQ/?utm_medium=share_sheet</a>
+                                <span class=" metadata "><span class="time ">09:07 AM</span></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="" id="akshayw">
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="akshayContact()">
+                        <div class="dp">
+                            <img src="./img/single.jpg" alt="">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">Akshay Waykar</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="me">
+                                <!-- <div class="message sent" style="padding: 10px 20px;">
+                                    Answer my phone! I need your help...
+                                    <span class="metadata" style="font-size:10px"><span class="time">11:00
+                                            AM</span></span>
+                                </div> -->
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="" id="cthathe">
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="chaityanContact()">
+                        <div class="dp">
+                            <img src="./img/single.jpg" alt="">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">Chaitanya Tathe</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="me">
+                                <!-- <div class="message sent" style="padding: 10px 20px;">
+                                    Answer my phone! I need your help...
+                                    <span class="metadata" style="font-size:10px"><span class="time">11:00
+                                            AM</span></span>
+                                </div> -->
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="" id="karale">
+                <div class="chat ">
+                    <div class="ChatbackBtn">
+                        <i class="fa-solid fa-arrow-left" onclick="closeChatSection()"></i>
+                    </div>
+                    <div class="groupNameBar" onclick="karaleContact()">
+                        <div class="dp">
+                            <img src="./img/single.jpg" alt="">
+
+                        </div>
+                        <div class="grpname">
+                            <span class="gname">Avdhut Karale</span> <br>
+                            <!-- <span class="cname">A2Z, Adesh, Akolkar, Akshay, Akshay, Avdhut, Chaitanya, Datta, Deepak, Gaurav, Gaurav, Pradnya, Renuka, Samiksha, Satish, Zade..</span> -->
+                        </div>
+
+
+                    </div>
+                    <div class="chatBox">
+                        <div class="chating">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-regular fa-paperclip"></i>
+                            </div>
+                            <div class="chatinput">
+                                <input type="text" name="" id="" placeholder="Type a message">
+                            </div>
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+
+                            </div>
+                        </div>
+                        <div class="allchat">
+                            <div class="me">
+                                <!-- <div class="message sent" style="padding: 10px 20px;">
+                                    Answer my phone! I need your help...
+                                    <span class="metadata" style="font-size:10px"><span class="time">11:00
+                                            AM</span></span>
+                                </div> -->
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="contact-info" id="contact-info">
+            <div class="contact-heading">
+                <i class="fa-solid fa-xmark" onclick="contactClose()"></i>
+                <p>Contact info</p>
+            </div>
+            <div class="dp-name">
+                <img src="" alt="" id="Contact-image">
+                <div class="cname">
+                    <p id="contact-name"> </p>
+                    <span id="grp-participant"> </span>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div class="group-diss">
+                <p id="grp-about"></p>
+                <p id="grp-discussion"></p>
+            </div>
+            <div class="border"></div>
+        </div>
+        <div class="popup" id="popupp">
+            <div class="img">
+                <img src="" alt="" id="popimg1">
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-xmark" onclick="close1()"></i>
+            </div>
+        </div>
+</body>
+
+</html>
