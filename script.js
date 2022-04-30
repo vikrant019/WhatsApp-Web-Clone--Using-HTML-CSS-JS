@@ -191,14 +191,14 @@ function imgFun() {
     var img = document.getElementById('popupp');
     img.style = "display:inline;";
     var popimg1 = document.getElementById('popimg1');
-    popimg1.setAttribute("src", "/img/sample2.jpeg");
+    popimg1.setAttribute("src", "./img/sample2.jpeg");
 }
 
 function imgFun2() {
     var img = document.getElementById('popupp');
     img.style = "display:inline";
     var popimg1 = document.getElementById('popimg1');
-    popimg1.setAttribute("src", "/img/sample1.jpeg");
+    popimg1.setAttribute("src", "./img/sample1.jpeg");
 }
 
 function close1() {
